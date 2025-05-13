@@ -1,15 +1,40 @@
 {
   "name": "apiretrival",
   "version": "1.0.0",
+  "description": "A RESTful API service for retrieving and searching programming topics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickyVishwakarma/APIRetrival.git"
+  },
+  "keywords": [
+    "api",
+    "topics",
+    "search",
+    "express",
+    "swagger"
+  ],
+  "author": "Ricky Vishwakarma",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/RickyVishwakarma/APIRetrival/issues"
+  },
+  "homepage": "https://github.com/RickyVishwakarma/APIRetrival#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "node-cache": "^5.1.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
